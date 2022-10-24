@@ -1,3 +1,4 @@
+package org.iesvi.ws;
 
 import javax.jws.WebService;
 
