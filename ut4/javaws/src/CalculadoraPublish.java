@@ -1,4 +1,4 @@
-import java.xml.ws.Endpoint;
+import javax.xml.ws.Endpoint;
 
 public class CalculadoraPublish {
     public static void main(String args[]){

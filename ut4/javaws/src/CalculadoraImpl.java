@@ -1,7 +1,7 @@
 
 import javax.jws.WebService;
 
-@WebService(endpointInterface="org.iesvi.ws.Calculadora");
+@WebService(endpointInterface="org.iesvi.ws.Calculadora")
 public class CalculadoraImpl implements Calculadora{
 
     @Override
