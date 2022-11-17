@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/usuario/psp/psp22-23/ut4/SpringBoot/demo2PSP/demo"/>
+			<item value="/home/usuario/psp/psp22-23/ut4/SpringBoot"/>
 			<item value="/home/usuario/Downloads/demo1PSP"/>
 		</list>
 		<list key="projectNameTemplate">
