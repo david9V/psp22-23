@@ -16,21 +16,24 @@ public class Servidor {
         int n = 1;
         ObjectInputStream numEntr = new ObjectInputStream(cliente.getInputStream());
         ObjectOutputStream numSal = new ObjectOutputStream(cliente.getOutputStream());
-
-        while (n != 0){
-            Numeros numeros = (Numeros) numEntr.readObject();
+        Numeros numeros;
+        do {
+            numeros = (Numeros) numEntr.readObject();
             System.out.println("Recibo número " + numeros.getNumero());
             numeros.setCuadrado((long) numeros.getNumero() * numeros.getNumero());
             numeros.setCubo((long) numeros.getNumero() * numeros.getNumero() * numeros.getNumero());
             if (numeros.getNumero() != 0){
                 numSal.writeObject(numeros);
                 System.out.println("Envío finalizado");
-                if (numeros.getNumero() == 0)
+                if (numeros.getNumero() == 0){
                     numSal.close();
                     numEntr.close();
+                }
+
             } else
+                servidor.close();
                 System.out.println("Servidor cerrado");
-        }
+        } while (numeros.getNumero() != 0);
 
 
     }
