@@ -13,7 +13,7 @@ public class Ejemplo8 {
 
     public static void main(String[] args) {
         try{
-            /*
+/*
             KeyPairGenerator kpg = KeyPairGenerator.getInstance("DSA");
             kpg.initialize(2048);
             KeyPair kp = kpg.generateKeyPair();
@@ -23,8 +23,13 @@ public class Ejemplo8 {
             FileOutputStream out = new FileOutputStream(outFile + ".privada");
             out.write(pvt.getEncoded());
             out.close();
- */
 
+            Key pub = kp.getPublic();
+
+            FileOutputStream out2 = new FileOutputStream(outFile + ".publica");
+            out2.write(pvt.getEncoded());
+            out2.close();
+*/
             FileInputStream inpriv = new FileInputStream("Clave.privada");
             byte[] bufferPriv = new byte[inpriv.available()];
             inpriv.read(bufferPriv);
@@ -51,7 +56,6 @@ public class Ejemplo8 {
             FileOutputStream fos = new FileOutputStream("FICHERO.FIRMA");
             fos.write(firma);
             fos.close();
-
         } catch(Exception e){
             System.out.println(e);
             //main
