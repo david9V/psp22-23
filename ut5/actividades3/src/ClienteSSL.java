@@ -19,7 +19,8 @@ public class ClienteSSL {
 
         //VERSION 3
 
-        FileInputStream ficCerConf = new FileInputStream("E:/Mis Cosas/PSPhola/ut5/actividades3/CliCertConfianza");
+        //FileInputStream ficCerConf = new FileInputStream("E:/Mis Cosas/PSPhola/ut5/actividades3/CliCertConfianza");
+        FileInputStream ficCerConf = new FileInputStream("/home/usuario/Desktop/git/psp_PERSONAL/ut5/actividades3/CliCertConfianza");
         String claveCerfConf = "1234567";
         KeyStore almacenConf = KeyStore.getInstance(KeyStore.getDefaultType());
         almacenConf.load(ficCerConf, claveCerfConf.toCharArray());

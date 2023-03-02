@@ -18,7 +18,9 @@ public class ServidorSSL {
         //SSLServerSocket servidorSSL = (SSLServerSocket) sfact.createServerSocket(puerto); Sustituido por version 3
 
         //VERSION3
-        FileInputStream ficAlmacen = new FileInputStream("E:/Mis Cosas/PSPhola/ut5/actividades3/Almacensrv");
+        //FileInputStream ficAlmacen = new FileInputStream("E:/Mis Cosas/PSPhola/ut5/actividades3/Almacensrv");
+        FileInputStream ficAlmacen = new FileInputStream("/home/usuario/Desktop/git/psp_PERSONAL/ut5/actividades3/Almacensrv");
+
         String claveAlmacen = "1234567";
         KeyStore almacen = KeyStore.getInstance(KeyStore.getDefaultType());
         almacen.load(ficAlmacen, claveAlmacen.toCharArray());
