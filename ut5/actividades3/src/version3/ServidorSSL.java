@@ -1,3 +1,5 @@
+package version3;
+
 import javax.net.ssl.*;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -9,16 +11,7 @@ import java.security.cert.CertificateException;
 public class ServidorSSL {
     public static void main(String[] args) throws IOException, UnrecoverableKeyException, KeyStoreException, NoSuchAlgorithmException, CertificateException, KeyManagementException {
         int puerto = 6000;
-        //java -Djavax.net.ssl.keyStore=Almacensrv -Djavax.net.ssl.keyStorePassword=1234567 ServidorSSL        VERSION 1
 
-        //System.setProperty("javax.net.ssl.keyStore", "Almacensrv");             VERSION 2
-        //System.setProperty("javax.net.ssl.keyStorePassword", "1234567");
-
-        //SSLServerSocketFactory sfact = (SSLServerSocketFactory)  SSLServerSocketFactory.getDefault(); Sustituido por versión 3
-        //SSLServerSocket servidorSSL = (SSLServerSocket) sfact.createServerSocket(puerto); Sustituido por version 3
-
-        //VERSION3
-        //FileInputStream ficAlmacen = new FileInputStream("E:/Mis Cosas/PSPhola/ut5/actividades3/Almacensrv");
         FileInputStream ficAlmacen = new FileInputStream("/home/usuario/Desktop/git/psp_PERSONAL/ut5/actividades3/Almacensrv");
 
         String claveAlmacen = "1234567";
