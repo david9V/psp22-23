@@ -15,7 +15,7 @@ public class ClienteSSL {
     public static void main(String[] args) throws IOException, CertificateException, NoSuchAlgorithmException, KeyStoreException, UnrecoverableKeyException, KeyManagementException {
         String Host = "localhost";
         int puerto = 6000;
-        //java -Djavax.net.ssl.trustStore=CliCertConfianza -Djava.net.ssl.trustStorePassword=1234567 version3.ClienteSSL.java
+        //java -Djavax.net.ssl.trustStore=CliCertConfianza -Djava.net.ssl.trustStorePassword=1234567 ClienteSSL.java
 
         System.out.println("PROGRAMA CLIENTE INICIADO");
 

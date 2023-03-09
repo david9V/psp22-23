@@ -11,7 +11,7 @@ import java.security.cert.CertificateException;
 public class ServidorSSL {
     public static void main(String[] args) throws IOException, UnrecoverableKeyException, KeyStoreException, NoSuchAlgorithmException, CertificateException, KeyManagementException {
         int puerto = 6000;
-        //java -Djavax.net.ssl.keyStore=Almacensrv -Djavax.net.ssl.keyStorePassword=1234567 version3.ServidorSSL.java
+        //java -Djavax.net.ssl.keyStore=Almacensrv -Djavax.net.ssl.keyStorePassword=1234567 ServidorSSL.java
 
         SSLServerSocketFactory sfact = (SSLServerSocketFactory)  SSLServerSocketFactory.getDefault();
         SSLServerSocket servidorSSL = (SSLServerSocket) sfact.createServerSocket(puerto);
